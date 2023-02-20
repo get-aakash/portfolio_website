@@ -6,7 +6,7 @@ const Header = () => {
       <div className="flex logo">
         <h1>Aakash Acharya</h1>
         <div>
-          <h3 className="line">Web Developer</h3>
+          <h3 className="line">Software Engineer</h3>
         </div>
       </div>
       <div className="right">

@@ -165,7 +165,7 @@ section {
   padding: 0 2rem;
 }
 .section1::before {
-  content: "Developer";
+  content: "Software";
   position: absolute;
   right: 0;
   top: -2.5rem;

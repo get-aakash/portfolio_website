@@ -6,9 +6,9 @@ const Contact = () => {
     <section className="section6 flex" id="contact">
       <h1 className="title">Get In Touch</h1>
       <div className="socials flex">
-        <i className="fa-brands fa-linkedin-in"></i>
-        <i className="fa-brands fa-facebook"></i>
-        <i className="fa-brands fa-github"></i>
+        <a href='https://www.linkedin.com/in/aakash-acharya/'><i  className="fa-brands fa-linkedin-in"></i></a>
+        <a href='https://www.facebook.com/aakash.acharya.56/'><i className="fa-brands fa-facebook"></i></a>
+        <a href='https://github.com/get-aakash'><i className="fa-brands fa-github"></i></a>
         <i className="fa-brands fa-twitter"></i>
       </div>
       <h1>OR</h1>
