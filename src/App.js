@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -11,6 +12,15 @@ import Scroll from './components/Scroll';
 import Skills from './components/Skills';
 
 function App() {
+  const [showScreen, setShowScreen] = useState("")
+  
+  const screens = {
+    skills: <Skills />,
+    projects: <Project />,
+    about:<About />,
+    contact: <Contact />
+  }
+  
   return (
     <div>
       {/* Dark Mode */}
@@ -20,33 +30,18 @@ function App() {
       <div className="wrapper">
         {/* <!-- header section --> */}
 
-        <Header />
+        <Header setShowScreen={setShowScreen} />
 
-        {/* <!-- hero section --> */}
+        {!showScreen ? (
+          <>
+          <Hero />
+          {Object.values(screens)}
+          </>
+        ):(
+          screens[showScreen]
+        )}
 
-        <Hero />
-
-        {/* <!-- info section --> */}
-
-        <Info />
-
-        {/* <!-- skills section --> */}
-
-        <Skills />
-
-        {/* <!-- project section --> */}
-
-        <Project />
-        {/* <!-- about me section --> */}
-
-        <About />
-
-        {/* Contact section */}
-
-        <Contact />
-
-        {/* <!-- footer section --> */}
-
+        
         <Footer />
 
         {/* <!-- Scroll Button --> */}

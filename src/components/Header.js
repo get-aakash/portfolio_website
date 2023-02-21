@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Header = () => {
+const Header = ({setShowScreen}) => {
+ 
   return (
     <header className="flex primary-header">
       <div className="flex logo">
@@ -16,19 +17,19 @@ const Header = () => {
         </label>
         <ul className="flex primary-navigation">
           <li>
-            <a href="#home">Home</a>
+            <a onClick= {()=>setShowScreen("")} href="#!">Home</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a onClick={()=>setShowScreen("skills")} href="#!">Skills</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a onClick={()=>setShowScreen("projects")} href="#!">Projects</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a onClick = {()=>setShowScreen("about")} href="#!">About</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a onClick={()=>setShowScreen("contact")} href="#!">Contact</a>
           </li>
         </ul>
       </div>
