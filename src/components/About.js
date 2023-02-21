@@ -1,9 +1,11 @@
 import React from 'react'
 import profile_image from "../assets/profile_image.png"
+import Layout from './Layout'
 
 const About = () => {
   return (
-    <section className="section5 flex" id="about">
+    <Layout>
+      <section className="section5 flex" id="about">
       <h1 className="title">About Me</h1>
       <div className="about-container flex">
         <div className="left flex">
@@ -26,6 +28,8 @@ const About = () => {
         </div>
       </div>
     </section>
+    </Layout>
+    
     
   )
 }

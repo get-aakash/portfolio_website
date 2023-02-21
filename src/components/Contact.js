@@ -1,9 +1,10 @@
 import React from 'react'
+import Layout from './Layout'
 
 const Contact = () => {
   return (
-    
-    <section className="section6 flex" id="contact">
+    <Layout>
+      <section className="section6 flex" id="contact">
       <h1 className="title">Get In Touch</h1>
       <div className="socials flex">
         <a href='https://www.linkedin.com/in/aakash-acharya/'><i  className="fa-brands fa-linkedin-in"></i></a>
@@ -23,6 +24,8 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </Layout>
+    
   )
 }
 

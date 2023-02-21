@@ -1,8 +1,12 @@
 import React from 'react'
+import Info from './Info'
+import Layout from './Layout'
 
 const Skills = () => {
   return (
-    <section className="section3 flex" id="skills">
+    <Layout>
+      <Info />
+      <section className="section3 flex" id="skills">
       <div className="skills-container flex">
         <div className="flex">
           <i className="fa-brands fa-html5"></i><span>HTML</span>
@@ -22,6 +26,8 @@ const Skills = () => {
       </div>
 
     </section>
+    </Layout>
+    
   )
 }
 

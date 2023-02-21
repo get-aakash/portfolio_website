@@ -4,10 +4,12 @@ import calculator from "../assets/calculator.png"
 import movieapi from "../assets/movieapi.png"
 import nottodolist from "../assets/nottodolist.png"
 import portfolio from "../assets/portfolio.png"
+import Layout from './Layout'
 
 const Project = () => {
   return (
-    <section className="section4 flex" id="projects">
+    <Layout>
+      <section className="section4 flex" id="projects">
       <h1 className="title">My Projects</h1>
       <div className="projects-container grid">
         <div className="project-card flex">
@@ -65,6 +67,8 @@ const Project = () => {
 
       </div>
     </section>
+    </Layout>
+    
   )
 }
 

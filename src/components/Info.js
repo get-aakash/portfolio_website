@@ -1,8 +1,10 @@
 import React from 'react'
+import Layout from './Layout'
 
 const Info = () => {
   return (
-    <section className="flex section2">
+    
+        <section className="flex section2">
       <div className="flex info-container">
         <div className="flex info-lists">
           <div className="icon-container">
@@ -36,6 +38,8 @@ const Info = () => {
 
       </div>
     </section>
+    
+    
   )
 }
 

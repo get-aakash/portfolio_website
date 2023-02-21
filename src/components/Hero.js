@@ -1,11 +1,13 @@
 import React from 'react'
 import profile_image from "../assets/profile_image.png"
 import aakash_resume from "../assets/aakash_resume.pdf"
+import Layout from './Layout'
 
 
 const Hero = () => {
   return (
-    <section className="section1 grid" id="home">
+    <Layout>
+      <section className="section1 grid" id="home">
       <div className="left"><img src={profile_image} alt=""/></div>
       <div className="right flex">
         <div>
@@ -21,6 +23,8 @@ const Hero = () => {
         </a>
       </div>
     </section>
+    </Layout>
+    
   )
 }
 
