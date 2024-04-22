@@ -13,7 +13,7 @@ const Hero = () => {
           <p className="tag">Software Engineer</p>
 
         </div>
-        <a href={aakash_resume} download="">
+        <a  download="">
           <button>
             Download Resume
             <i className="fa-solid fa-download"></i>
