@@ -1,5 +1,5 @@
 :root {
-  --coloryellow: #FFca2f;
+  --coloryellow: #c2cccc;
   --link-color:#0e76a8;
   --text-color:#000;
   --color-dark:#2a2a2a;
@@ -171,7 +171,7 @@ section {
   top: -2.5rem;
   font-weight: bold;
   font-size: 5rem;
-  color: rgba(250, 201, 54, 0.662745098);
+  color: var(--coloryellow);
 }
 .section1 .left {
   grid-area: one;

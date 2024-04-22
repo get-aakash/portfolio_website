@@ -58,7 +58,7 @@ const Project = () => {
           <div className="bottom">
             <a href='https://github.com/get-aakash/calculator.git'>
             <p>December2, 2022</p>
-            <p>alculator Web Application Built Using HTML and CSS</p>
+            <p>Calculator Web Application Built Using HTML and CSS</p>
             </a>
           </div>
         </div>
